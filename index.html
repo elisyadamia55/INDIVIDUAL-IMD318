@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisya's Life</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Video Background */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Content Container */
+        .container {
+            text-align: center;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #000;
+        }
+
+        /* Digital Clock */
+        .digital-clock {
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .time-box {
+            display: inline-block;
+            width: 80px;
+            height: 100px;
+            margin: 0 5px;
+            background: rgba(255, 255, 255, 0.1); /* White transparent background */
+            color: #fff; /* White text */
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+            filter: brightness(0) invert(1); /* Makes icons white */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Keyframe Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop>
+        <source src="video/videosatu.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Elisya's Life</h1>
+        <!-- Digital Clock -->
+        <div class="digital-clock" id="clock">
+            <div class="time-box" id="hours">00</div>
+            <div class="time-box" id="minutes">00</div>
+            <div class="time-box" id="seconds">00</div>
+        </div>
+        <button onclick="navigateToMainPage()">Let's See</button>
+
+       
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        function navigateToMainPage() {
+            const container = document.querySelector('.container');
+            container.style.opacity = 0;
+            setTimeout(() => {
+                window.location.href = "intro.html"; // Navigate to intro.html
+            }, 1000);
+        }
+
+        // Digital Clock Functionality
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

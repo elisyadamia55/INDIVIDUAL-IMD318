@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Import Butler for general text and calligraphy font for the heading */
+        @import url('https://fonts.googleapis.com/css2?family=Butler&family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Butler', serif;
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000080; /* Navy blue */
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Floating background animation */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/gambardua.png') no-repeat center center;
+            opacity: 0.3;
+            animation: float 10s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8); /* Light blue with transparency */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC; /* Beige */
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4; /* Steel blue */
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+        }
+
+        .container {
+            padding: 100px 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+            border-radius: 15px;
+            margin: 100px auto 50px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fade-in 2s ease-out;
+        }
+
+        /* Fade-in animation */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            color: #4682B4; /* Steel Blue */
+            margin-bottom: 20px;
+            animation: slide-down 1.5s ease-in-out;
+        }
+
+        /* Slide-down animation for heading */
+        @keyframes slide-down {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fade-in 2.5s ease-out;
+        }
+
+        /* Pop-up hover effect for images */
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.2); /* Zoom effect */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            animation: fade-in 3s ease-out;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-menu">
+                    <a href="index.html">ELISYA<3</a>
+</div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friend.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+
+    <div class="container">
+        <h1>About Her <3</h1>
+        <p>My name is Nurelisya Damia bt Sharul Fadzri, a 20-year-old Part 5 Information Management student. I am passionate about designing, multimedia, and leadership, which allow me to express creativity and inspire others. Known for my happy-go-lucky personality, I approach challenges with positivity and strive to make the most of every opportunity to learn and grow.</p>
+        <img src="image/gambarempat.jpg" alt="A picture of Nurelisya Damia">
+
+        <p>In the future, I aim to achieve several goals that align with my passion and aspirations. Firstly, I want to establish a successful career in public relations, becoming a trusted professional who builds meaningful connections and effectively represents organizations. Secondly, I hope to enhance my skills in designing and multimedia to create impactful campaigns and projects that inspire and engage audiences. Lastly, I aspire to take on leadership roles where I can guide and empower others, contributing to a positive and collaborative environment. Through continuous learning and perseverance, I am determined to turn these goals into reality.</p>
+
+        <div class="gallery">
+            <img src="image/gambartiga.jpg" alt="Gallery Photo 1">
+            <img src="image/gambarlima.jpg" alt="Gallery Photo 2">
+            <img src="image/gambarenam.jpg" alt="Gallery Photo 3">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elisya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

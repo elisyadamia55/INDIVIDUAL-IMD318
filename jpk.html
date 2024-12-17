@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPK Masria</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap'); /* Handwritten font */
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Butler', serif;
+            color: #000080; /* Navy Blue */
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8); /* Light blue with transparency */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 5px;
+            background-color: rgba(135, 206, 235, 0.9);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC; /* Beige */
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4; /* Steel blue */
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #000080;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            font-size: 16px;
+            color: #333;
+            margin-top: 15px;
+            text-align: justify;
+        }
+
+        .instagram-link {
+            margin-top: 10px;
+            font-size: 18px;
+            color: soft blue; /* Instagram pink */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .instagram-link:hover {
+            color: pink; /* Darker Instagram pink */
+        }
+
+        .audio {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080; /* Navy Blue */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+
+
+    <nav>
+   
+        <div class="left-menu">
+                    <a href="index.html">ELISYA<3</a>
+</div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+   
+
+    <div class="container">
+        <div class="section">
+            <h2>JPK Masria</h2>
+            <a href="https://www.instagram.com/jpkmasria" target="_blank" class="instagram-link">Follow us @jpkmasria</a><br>
+            <div class="image-gallery">
+                <img src="image/jpkmasria1.jpg" alt="JPK Image 1">
+                <img src="image/jpkmasria2.jpg" alt="JPK Image 2">
+                <img src="image/jpkmasria3.jpg" alt="JPK Image 3">
+            </div>
+            <p class="description">
+                I would like to express my heartfelt appreciation to each and every member of <b>JPK Masria</b> for their dedication, hard work, and unwavering commitment. Your teamwork, creativity, and support have been the driving force behind the success of our programs. From planning to execution, every effort, big or small, has made a significant impact. I truly admire the way we have grown together as a team, overcoming challenges and creating meaningful memories. Thank you for always giving your best, and I am deeply grateful to be part of such an amazing group. Let’s continue to make Masria proud!
+            </p>
+        </div>
+
+        <style>
+    .hover-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        transition: transform 0.3s ease;
+    }
+
+    .hover-table tr {
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-table tr:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background-color: rgba(173, 216, 230, 0.2); /* Light blue background on hover */
+    }
+
+    .hover-table td {
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    .hover-table img {
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="section">
+    <h2>Our Program/JPKNR</h2>
+    <table class="hover-table">
+        <tr>
+            <td style="width: 20%;">
+                <img src="image/zoomanji.jpg" alt="Program 1">
+            </td>
+            <td style="width: 50%;">
+                <p><b><u>ZOOMANJI</p></b></u>
+            <ul>
+               <li>The Zoomanji program aims to raise awareness about wildlife conservation and environmental sustainability among participants. Through guided activities and interactive sessions with zoo staff, participants can learn about endangered species, habitat protection, and the role of zoos in preserving biodiversity.
+<br><br>
+               <li>As part of the i-CSR initiative, Zoomanji encourages participants to actively contribute to Zoo Taiping's operations, such as habitat cleaning, enrichment activities for animals, or assisting in educational programs. This hands-on approach fosters a sense of responsibility and community engagement.
+<br><br>
+               <li>The program highlights the importance of partnerships between educational institutions, corporations, and community organizations like Zoo Taiping. It serves as a platform for participants to develop teamwork, leadership skills, and stronger connections while contributing to a meaningful cause.
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/halaqah.jpg" alt="Program 2">
+            </td>
+            <td>
+                <p><b><u>HALAQAH YASIN MINGGUAN 2.0</p></b></u>
+            <ul>
+               <li>The Halaqah Yassin Mingguan program focuses on enhancing participants' spiritual connection through the recitation of Surah Yasin, Surah Al-Mulk, and Qunut Nazilah. This weekly gathering provides a consistent opportunity for participants to reflect on the teachings of the Quran and strengthen their faith.
+<br><br>
+               <li>By including Qunut Nazilah, the program encourages collective supplication, seeking Allah's protection, guidance, and blessings during challenging times. This practice instills a sense of unity, compassion, and reliance on Allah among participants.
+<br><br>
+               <li>The weekly program serves as a platform for building a close-knit and supportive community. Through shared recitations and prayers, participants cultivate a sense of brotherhood and sisterhood, promoting positive values and mutual encouragement within the group.
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/projek1.jpg" alt="Program 3">
+            </td>
+            <td>
+                <p><b><u>PROJEK 90-AN</p></b></u>
+            <ul>
+               <li>Projek 90-an serves as an entrepreneurship program by involving external vendors to showcase and sell their products or services. This collaboration not only provides vendors with a platform to reach a wider audience but also exposes participants to real-world business operations and entrepreneurial skills.
+<br><br>
+               <li>The program offers a variety of activities, including a concert, traditional games, henna art, and open mic sessions. These activities cater to different interests, creating a lively and nostalgic atmosphere that engages participants and promotes cultural appreciation.
+<br><br>
+               <li>By incorporating elements like traditional games and 90s-themed activities, Projek 90-an fosters a sense of community and connection among attendees. The open mic sessions and concert further encourage self-expression and talent showcasing, making the program both meaningful and entertaining.
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/yff.jpg" alt="Program 4">
+            </td>
+            <td>
+                <p><b><u>YASIN FOR FINAL</p></b><u/>
+            <ul>
+               <li>Yasin for Final focuses on helping students spiritually prepare for their upcoming final exams by reciting Surah Yasin. The program seeks blessings and guidance from Allah, fostering inner peace and strength during this crucial period.
+<br><br>
+               <li>By gathering students at Pusat Islam, the program creates a sense of unity and togetherness. It provides a supportive environment where students can encourage one another and collectively seek success through prayer.
+<br><br>
+               <li>The program emphasizes the importance of balancing academic efforts with spiritual practices. It reminds students to rely on both hard work and prayers, reinforcing the belief that success comes through effort, faith, and reliance on Allah.
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/albuysra.jpg" alt="Program 5">
+            </td>
+            <td>
+                <p><b><u>AL-BUSYRA FUN RUN</p></b></u>
+            <ul>
+               <li>The Al-Busyra Fun Run is a volunteer-led initiative held at Al-Busyra Mosque, where participants and organizers come together to foster community spirit. The program encourages active participation and teamwork among volunteers to ensure the smooth running of the event.
+<br><br>
+               <li>The event includes a structured fun run featuring checkpoints along the route. These checkpoints may include water stations, activity spots, or motivational stops to keep participants energized and engaged throughout the run.
+<br><br>
+               <li>To create an inclusive and family-friendly environment, the program also features kids' activities alongside the fun run. These activities provide entertainment and ensure younger participants have an enjoyable experience, making it a holistic event for all ages.
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/fesko2023.jpg" alt="Program 6">
+            </td>
+            <td>
+                <p><b><u>FESKO 2023</p></b></u>
+            <ul>
+               <li>FESKO 2023 serves as the starting point for entrepreneurial events organized by JPKNR, preceding Projek 90-an. This program sets the tone for fostering business collaborations with external vendors while providing valuable exposure to students in handling real-world entrepreneurial activities.
+<br><br>
+               <li>FESKO 2023 features a variety of unique activities such as the petting zoo, archery, ramen challenge, and barber challenge. These activities offer entertainment, hands-on experiences, and opportunities for friendly competition, making the program engaging for participants of all ages.
+<br><br>
+               <li>By combining entrepreneurship with engaging activities, FESKO 2023 not only promotes community interaction but also encourages skill-building. The inclusion of physical challenges like archery and creative contests fosters teamwork, confidence, and a vibrant, lively atmosphere for attendees.
+            </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 JPK Masria. All rights reserved.</p>
+    </footer>
+
+    <audio autoplay loop>
+        <source src="songsatu.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
+

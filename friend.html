@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - My Muder & Best Teh Ais</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Butler', serif;
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000080;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            padding: 100px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin: 100px auto 50px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Photo Slider */
+        .slider {
+            position: relative;
+            overflow: hidden;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slides img {
+            width: 150px; /* Smaller pictures */
+            height: auto;
+            margin: 5px; /* Add spacing between images */
+            border-radius: 10px;
+            flex-shrink: 0; /* Prevent images from resizing */
+        }
+
+        .section {
+            margin: 50px 0;
+        }
+
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4682B4;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="left-menu">
+
+                    <a href="index.html">ELISYA<3</a>
+</div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friend.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+
+    <div class="container">
+        <h1>Friends</h1>
+        <h2>My Muder</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="video/muder.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="caption">I truly appreciate my circle of friends, "Muder," who I treasure more than words can express. We first met in 2022 when we were rookies in JPK, and from the very beginning, we faced countless challenges together. Despite the tough times, we stuck by each other, learning, growing, and overcoming obstacles as a team. Our friendship has only deepened through these shared experiences, and now, I can't imagine my life without them. They are not just my friends; they’ve become family. I love them so much that I’ve come to declare them my favorite "hello" and my hardest "goodbye." Through every laugh, every struggle, and every moment we’ve shared, I am forever grateful for them and the bond we’ve built.</p>
+        
+        <!-- First Slider -->
+        <div class="slider" id="muder-slider">
+            <div class="slides">
+                <img src="image/muder1.jpg" alt="Photo 1">
+                <img src="image/muder2.jpg" alt="Photo 2">
+                <img src="image/muder3.jpg" alt="Photo 3">
+                <img src="image/muder4.jpg" alt="Photo 1">
+                <img src="image/muder5.jpg" alt="Photo 2">
+                <img src="image/muder6.jpg" alt="Photo 3">
+                <img src="image/muder7.jpg" alt="Photo 1">
+                <img src="image/muder8.jpg" alt="Photo 2">
+                <img src="image/muder9.jpg" alt="Photo 3">
+                <img src="image/muder10.jpg" alt="Photo 1">
+                <img src="image/muder11.jpg" alt="Photo 2">
+                <img src="image/muder12.jpg" alt="Photo 3">
+                <img src="image/muder13.jpg" alt="Photo 1">
+                <img src="image/muder14.jpg" alt="Photo 2">
+                <img src="image/muder15.jpg" alt="Photo 3">
+                <img src="image/muder16.jpg" alt="Photo 1">
+                <img src="image/muder17.jpg" alt="Photo 2">
+                <img src="image/muder18.jpg" alt="Photo 3">
+                <img src="image/muder19.jpg" alt="Photo 2">
+                <img src="image/muder20.jpg" alt="Photo 3">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>My Best Teh Ais</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="video/alis.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="caption">Alis and Anisah are my best friends, my partners in crime, my ride-or-die or whatever you want to call it, they’re my people. We’ve been through it all since day one of diploma, and I can’t imagine my journey without them. From witnessing my breakdowns over assignments to being there through every struggle, they’ve supported me in ways I could never repay. They were also the first friends I had sleepovers with, and we’ve created countless memories together. Too many stories, too many laughs, and too many moments that I will forever cherish. They’re more than friends to me, they’re family, and I’m so grateful to have them by my side every step of the way.</p>
+            
+            <!-- Second Slider -->
+            <div class="slider" id="tehais-slider">
+                <div class="slides">
+                    <img src="image/best9.jpg" alt="Photo 11">
+                    <img src="image/best8.jpg" alt="Photo 12">
+                    <img src="image/best7.jpg" alt="Photo 13">
+                    <img src="image/best6.jpg" alt="Photo 11">
+                    <img src="image/best5.jpg" alt="Photo 12">
+                    <img src="image/best4.jpg" alt="Photo 13">
+                    <img src="image/best3.jpg" alt="Photo 11">
+                    <img src="image/best2.jpg" alt="Photo 12">
+                    <img src="image/best1.jpg" alt="Photo 13">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Memories to Cherish Forever</h2>
+            <img src="image/classmate.jpg" alt="Friends Together" width="500">
+            <p class="caption">KCDIM1101C-KCDIM1105C</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Friends - My Muder & Best Teh Ais. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function startSlider(sliderId) {
+            const slider = document.querySelector(`#${sliderId} .slides`);
+            const slides = document.querySelectorAll(`#${sliderId} .slides img`);
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % (totalSlides - 2); 
+                slider.style.transform = `translateX(-${currentIndex * 170}px)`; /* Adjust slide shift */
+            }, 3000);
+        }
+
+        // Start sliders
+        startSlider('muder-slider');
+        startSlider('tehais-slider');
+    </script>
+</body>
+</html>

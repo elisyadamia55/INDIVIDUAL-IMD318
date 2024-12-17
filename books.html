@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books & Movies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            color: #000080;
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4;
+            transform: scale(1.1);
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #000080;
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: pink;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #d8e7f3;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        table a {
+            text-decoration: none;
+            color: #4682B4;
+            font-weight: bold;
+        }
+
+        table a:hover {
+            color: #ff69b4;
+            text-decoration: underline;
+        }
+
+        .recommend-section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .recommend-section h2 {
+            font-size: 28px;
+            color: #000080;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-menu">
+            <a href="index.html">ELISYA<3</a>
+        </div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+
+    <div class="container">
+        <!-- Books Section -->
+        <div class="section">
+            <h2>My Favourite Books</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Book Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://www.goodreads.com/book/show/55710822-better-than-the-movies" target="_blank">Better Than the Movies</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://www.goodreads.com/book/show/44421460-before-the-coffee-gets-cold" target="_blank">Before the Coffee Gets Cold</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://www.goodreads.com/book/show/57390604-as-long-as-the-lemon-trees-grow" target="_blank">As Long As The Lemon Trees Grow</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Movies Section -->
+        <div class="section">
+            <h2>My Favourite Movies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Movie Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://www.imdb.com/title/tt0458352/" target="_blank">The Devil Wears Prada</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://www.imdb.com/title/tt0125439/" target="_blank">Notting Hill</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://www.imdb.com/title/tt0332280/" target="_blank">The Notebook</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Recommend Section -->
+        <div class="recommend-section">
+            <h2>Recommend Me a Book or Movie!</h2>
+            <!-- Embed Google Form -->
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfYKB5kpoLFfKLfpggrDEptL6tu_byXL5VoEhZ54IT5gINcpA/viewform?usp=header" 
+                width="100%" 
+                height="600px" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Favourite Books & Movies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

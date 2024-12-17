@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000080;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }
+
+        .container {
+            padding: 100px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin: 100px auto 50px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .parents {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 20px auto;
+        }
+
+        .parents img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            flex: 0 0 33.33%; /* Show 3 images at once */
+            max-width: 33.33%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .slider-buttons button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            pointer-events: all;
+        }
+
+        .slider-buttons button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-menu">
+                    <a href="index.html">ELISYA<3</a>
+</div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friend.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+
+    <div class="container">
+        <h1>My Family</h1>
+        <p>Mr. Sharul Fadzri and Mrs. Juriah, they are the reason I am here today. I love them so much.</p>
+        <div class="parents">
+            <img src="image/parents.jpg" alt="Mr. Sharul Fadzri"width="50">
+            <img src="image/parentssatu.jpg" alt="Mrs. Juriah"width="50">
+        </div>
+
+        <h2>My siblings or should I say my ride or die</h2>
+        <div class="slider" id="sibling-slider">
+            <div class="slides">
+                <img src="image/siblingmat.jpg" alt="Sibling 2">
+                <img src="image/siblingyon.jpg" alt="Sibling 3">
+                <img src="image/siblingkakak.jpg" alt="Sibling 4">
+                <img src="image/siblingsatu.jpg" alt="Sibling 1">
+                <img src="image/siblingdua.jpg" alt="Sibling 2">
+                <img src="image/siblingtiga.jpg" alt="Sibling 3">
+                <img src="image/siblingempat.jpg" alt="Sibling 4">
+                <img src="image/siblinglima.jpg" alt="Sibling 1">
+                <img src="image/siblingenam.jpg" alt="Sibling 2">
+            </div>
+            <div class="slider-buttons">
+                <button onclick="moveSlide('sibling-slider', -1)">&#10094;</button>
+                <button onclick="moveSlide('sibling-slider', 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <h2>My cheeky and silly niece & nephew</h2>
+        <div class="slider" id="niece-slider">
+            <div class="slides">
+                <img src="image/anakbuahsatu.jpg" alt="Niece 1">
+                <img src="image/anakbuahdua.jpg" alt="Niece 2">
+                <img src="image/anakbuahtiga.jpg" alt="Niece 3">
+                <img src="image/anakbuahempat.jpg" alt="Niece 4">
+                <img src="image/anakbuahlima.jpg" alt="Niece 2">
+                <img src="image/anakbuahenam.jpg" alt="Niece 3">
+            </div>
+            <div class="slider-buttons">
+                <button onclick="moveSlide('niece-slider', -1)">&#10094;</button>
+                <button onclick="moveSlide('niece-slider', 1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elisya. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slideIndex = {};
+
+        function moveSlide(sliderId, direction) {
+            const slider = document.querySelector(`#${sliderId} .slides`);
+            if (!slideIndex[sliderId]) slideIndex[sliderId] = 0;
+            const totalSlides = slider.children.length;
+            const visibleSlides = 3;
+
+            slideIndex[sliderId] += direction;
+            if (slideIndex[sliderId] > totalSlides - visibleSlides) slideIndex[sliderId] = 0;
+            if (slideIndex[sliderId] < 0) slideIndex[sliderId] = totalSlides - visibleSlides;
+
+            const offset = -(slideIndex[sliderId] * 100 / visibleSlides);
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisya - Videos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Butler&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Butler', serif;
+            color: white; /* Navy Blue */
+            background: url('image/gambardua.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.8); /* Light blue with transparency */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 5px;
+            background-color: rgba(135, 206, 235, 0.9);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #F5F5DC; /* Beige */
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4682B4; /* Steel blue */
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .video-grid:has(.video-card:nth-last-child(-n+2):nth-child(n+3)) {
+            justify-content: center; /* Center the last two items if they form an incomplete row */
+        }
+
+        .video-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card video {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .video-card video:hover {
+            cursor: pointer;
+        }
+
+        .video-title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000080; /* Navy Blue */
+            text-decoration: none;
+        }
+
+        .video-title:hover {
+            color: #4682B4; /* Steel Blue */
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            color: #000080; /* Navy Blue */
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .audio-control {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(135, 206, 235, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .audio-control img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        function toggleAudio() {
+            const audio = document.querySelector('audio');
+            const button = document.querySelector('.audio-control img');
+
+            if (audio.paused) {
+                audio.play();
+                button.src = 'pause-icon.png'; // Replace with your pause icon
+            } else {
+                audio.pause();
+                button.src = 'play-icon.png'; // Replace with your play icon
+            }
+        }
+    </script>
+</head>
+<body>
+     <nav>
+        <div class="left-menu">
+                    <a href="index.html">ELISYA<3</a>
+</div>
+        <a href="intro.html">Home</a>
+        <a href="elisya.html">Elisya</a>
+        <a href="family.html">Family</a>
+        <a href="friend.html">Friends</a>
+        <a href="jpk.html">JPK</a>
+        <a href="books.html">Books & Movies</a>
+    </nav>
+
+
+    <div class="container">
+        <h2> Hi! welcome to my safe space :))</h2>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <video src="video/elisya.mov" autoplay loop muted></video>
+                <a href="elisya.html" class="video-title">her</a>
+            </div>
+            <div class="video-card">
+                <video src="video/family.mov" autoplay loop muted></video>
+                <a href="family.html" class="video-title">beloved family</a>
+            </div>
+            <div class="video-card">
+                <video src="video/friends.mov" autoplay loop muted></video>
+                <a href="friend.html" class="video-title">partner in crime</a>
+            </div>
+            <div class="video-card">
+                <video src="video/jpk.mov" autoplay loop muted></video>
+                <a href="jpk.html" class="video-title">my jpk</a>
+            </div>
+            <div class="video-card">
+                <video src="video/books.mov" autoplay loop muted></video>
+                <a href="book.html" class="video-title">books & movies</a>
+            </div>
+            <div class="video-card">
+                <video src="video/projek.mp4" autoplay loop muted></video>
+                <a" class="video-title">sneak peak of my life :)</a>
+            </div>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="songsatu.mp3" type="audio/mp3">
+    </audio>
+
+    <button class="audio-control" onclick="toggleAudio()">
+        <img src="image/lagu.png" alt="Play"> <!-- Replace with actual icon paths -->
+    </button>
+</body>
+</html>
